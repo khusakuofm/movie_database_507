@@ -1,0 +1,6 @@
+__pycache__
+cache.json
+secrets.py
+scratch.py
+movie_reviews.sqlite
+
