@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8"/>
+    <title>Movies: Results</title>
+</head>
+<body>
+    <h1>Here are your results!</h1>
+    <table>
+        <tr>
+            <th>Movie</th>
+            <th>Reviewer</th>
+            <th>Short Description</th>
+            <th>Rating</th>
+        </tr>
+        {% for row in results %}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+            <td>{{row[3]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,45 @@
+
+<html>
+<head>
+    <meta charset="UTF8"/>
+    <title>Movies Home</title>
+</head>
+<body>
+    <h1>Welcome to the Movie Browser!</h1>
+    <div>Here you can explore movies reviewed by the NYT and
+        view additional details and summaries. 
+        Choose your own
+        adventure! 
+    </div>
+
+    <h3>Click the link below to see a list of movies that won NYT Critic's Choice:</h3>
+    <p><a href='/Movies/CriticsPick'>NYT Critics' Choice Movies</a></p>
+    <h3>Or follow this link to see the rest of reviewed movies:</h3>
+    <p><a href='/Movies/NonCriticsPick'>NYT Critics thought these were just ok</a></p>
+
+    <h3>Perhaps, you would like to see the average length of movies reviewed:</h3>
+    <p><a href='/Runtime'>Length of Movies per Reviewer</a></p>
+
+    <h3>Or which reviewer worked hardest:</h3>
+    <p><a href='/reviews_by_reviewer'>Number of Reviews per Reviewer</a></p>
+
+    <h3>You can also see average IMDB ratings for the following genres per reviewer. Select one to see the 
+        results!
+    </h3>
+
+    <form action="/handle_genres" method="POST">
+        <p>
+            Choose one! <br/>
+            <input type="radio" name="genre" value="Action">Action<br/>
+            <input type="radio" name="genre" value="Comedy">Comedy<br/>
+            <input type="radio" name="genre" value="Drama">Drama<br/>
+            <input type="radio" name="genre" value="Horror">Horror<br/>
+            <input type="radio" name="genre" value="Mystery">Mystery<br/>
+            <input type="radio" name="genre" value="Adventure">Adventure<br/>
+        </p>
+    
+        <input type="submit" value="Submit Form"/>
+      </form>  
+
+</body>
+</html>
