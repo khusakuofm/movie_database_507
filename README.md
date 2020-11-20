@@ -1,4 +1,4 @@
-# movie database Project 
+# Movie Database Project 
 
 This application pulls information about NYT reviews and other movie info from a year specified by user in the FLASK Application. To run the application, just run the python script on your machine and access the Flask App in your browser, enter the year you're interested in, and view results. 
 
